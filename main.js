@@ -10,7 +10,7 @@ function findCombinations(target, numbers) {
     function findSubset(startIndex, subset, currentSum) {
         if (currentSum === target) {
             result.push([...subset]); // Add a copy of the current subset to the result
-            return;
+            return; 
         }
 
         for (let i = startIndex; i < numbers.length; i++) {
